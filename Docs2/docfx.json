@@ -1,0 +1,44 @@
+{
+  "build": {
+    "content": [
+      {
+         "files": [
+          "**/*.yml"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "Docs2/**"
+        ],
+        "src": null,
+        "dest": null
+      }
+    ],
+   "resource": [
+      {
+        "files": [
+                 "**/*.png",
+	          "**/*.jpg",
+	          "**/*.gif",
+	          "**/*.bmp",
+	          "_themes/**"
+
+        ],
+        "exclude": [
+          "**/obj/**",
+	          "_themes/DocPacker/**"
+
+        ],
+        "src": null,
+        "dest": null
+      }
+    ],
+    "overwrite": [],
+    "externalReference": [],
+    "globalMetadata": {},
+    "fileMetadata": {},
+    "template": [
+      "docs.html"
+    ],
+    "dest": "Docs2"
+  }
+}

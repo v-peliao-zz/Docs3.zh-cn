@@ -1,0 +1,49 @@
+{
+  "build_entry_point": "docs.ps1",
+  "need_generate_pdf": false,
+  "need_generate_intellisense": false,
+  "docsets_to_publish": [
+    {
+      "docset_name": "Docs3",
+      "build_source_folder": "Docs2",
+      "build_output_subfolder": "Docs2",
+      "locale": "zh-cn",
+      "open_to_public_contributors": false,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content"
+      },
+      "build_entry_point": "docs.ps1"
+    },
+    {
+      "docset_name": "Test111",
+      "build_source_folder": "Test",
+      "build_output_subfolder": "Test111",
+      "locale": "zh-cn",
+      "open_to_public_contributors": false,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content"
+      },
+      "build_entry_point": "op"
+    }
+  ],
+  "notification_subscribers": [
+    "v-peliao@microsoft.com"
+  ],
+  "branches_to_filter": [],
+  "skip_source_output_uploading": false,
+  "dependent_repositories": [
+    {
+      "path_to_root": "_repo.en-us",
+      "url": "https://github.com/v-peliao/Docs3",
+      "branch": "live",
+      "branch_mapping": {
+        "live": "live",
+        "master": "master"
+      }
+    }
+  ],
+  "need_generate_pdf_url_template": false
+}
